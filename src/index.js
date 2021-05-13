@@ -7,7 +7,7 @@ search.addEventListener('keypress', setAction);
 
 function setAction(e) {
 	if(e.keyCode == 13) {
-		getResult(search.value);
-		displayWeather(data);
+		getResult(search.value)
+		.then(data => displayWeather(data));
 	}
 }

@@ -1,5 +1,4 @@
 import axios from 'axios';
-import displayWeather from './js/background';
 
 const getResult = async (query) => {
 	const key = 'd1b4490baf954b9a45f0e011f71bb87b';
@@ -12,6 +11,7 @@ const getResult = async (query) => {
 		city.innerHTML = `${data.name}, ${data.sys.country}`;
 		temp.innerHTML = `${Math.round(data.main.temp)}<span>°C</span>`
 		weather.innerHTML = `${data.weather[0].main}`;
+		return data;
 	} catch (error) {
 		return error;
 	}
