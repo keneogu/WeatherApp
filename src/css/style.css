@@ -16,8 +16,7 @@ body {
 .contain {
   width: 600px;
   margin: 0 auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0)), to(red));
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), red);
+  background-color: rgba(34, 32, 32, 0.8);
   color: white;
   font-size: 1.25rem;
   text-align: center;
