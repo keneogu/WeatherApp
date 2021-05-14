@@ -9,7 +9,7 @@ const getResult = async (query) => {
 		const res = await axios(`https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${key}&units=metric`);
 		const { data } = res;
 		city.innerHTML = `${data.name}, ${data.sys.country}`;
-		temp.innerHTML = `${Math.round(data.main.temp)}<span>°C</span>`
+		temp.innerHTML = `${Math.round(data.main.temp)}`;
 		weather.innerHTML = `${data.weather[0].main}`;
 		return data;
 	} catch (error) {
