@@ -1,4 +1,4 @@
-import './css/style.scss';
+import './css/style.css';
 import getResult from './js/weather';
 import displayWeather from './js/background';
 import changeTemp from './js/temp';
@@ -9,7 +9,8 @@ search.addEventListener('keypress', setAction);
 function setAction(e) {
 	if(e.keyCode == 13) {
 		getResult(search.value)
-		.then(data => displayWeather(data));
+		.then(data => displayWeather(data))
+		.then(search.value = "");
 	}
 }
 changeTemp();

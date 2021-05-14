@@ -3,14 +3,20 @@ body {
   background-position: center;
   background-size: cover;
 }
+
 .container {
   height: 100vh;
+  display: -ms-grid;
   display: grid;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .contain {
   width: 600px;
   margin: 0 auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 32, 32, 0.8)));
   background: linear-gradient(rgba(34, 32, 32, 0.8));
   color: white;
   font-size: 1.25rem;
@@ -32,3 +38,4 @@ body {
   color: black;
   cursor: pointer;
 }
+/*# sourceMappingURL=style.css.map */

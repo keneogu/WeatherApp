@@ -10,22 +10,24 @@
 </head>
 <body>
 	<div class="container">
-		<header>
-			<input type="text" class="search-box" placeholder="Search for a city...">
+		<div class="contain">
+		<header class="header">
+			<input type="text" class="search-box my-5" placeholder="Search for a city...">
 		</header>
 		<main>
 			<section class="location">
-				<div class="city">Lagos, NG</div>
-				<div class="date">Tuesday 11 May 2021</div>
+				<div class="city mb-1">Lagos, NG</div>
+				<div class="date mb-3">Tuesday 11 May 2021</div>
 			</section>
 			<div class="current">
-				<div class="temperature"><span class="temp">15</span>&deg;<span class="cf">C</span></div>
-				<div class="weather"><span>clouds</span></div>
+				<div class="temperature fs-1"><span class="temp">15</span>&deg;<span class="cf">C</span></div>
+				<div class="weather fs-3"><span>clouds</span></div>
 			</div>
-			<div class="units">
+			<div class="units p-2">
 				<span class="metric">&deg;<span class="cf">C</span></span>
 			</div>
 		</main>
+		</div>
 	</div>
 	<script src="./main.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
