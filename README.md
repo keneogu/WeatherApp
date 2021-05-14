@@ -17,7 +17,7 @@ One can extract weather information about a current weather from a city which in
 ## Getting Started
 
 - Clone the repo `git@github.com:keneogu/WeatherApp.git`
-- cd into `weather-app`
+- cd into `weather`
 - Run `git pull origin weather`
 - On the terminal run:
   - `` npm install`` to get a copy of the packages in your local environment
