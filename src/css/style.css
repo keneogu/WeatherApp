@@ -9,15 +9,14 @@ body {
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .contain {
   width: 600px;
   margin: 0 auto;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 32, 32, 0.8)));
-  background: linear-gradient(rgba(34, 32, 32, 0.8));
+  background-color: rgba(34, 32, 32, 0.8);
   color: white;
   font-size: 1.25rem;
   text-align: center;
@@ -38,4 +37,3 @@ body {
   color: black;
   cursor: pointer;
 }
-/*# sourceMappingURL=style.css.map */
